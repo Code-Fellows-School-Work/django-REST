@@ -1,6 +1,6 @@
 from django.db import models
 
-class Companies(models.Model):
+class Companie(models.Model):
     name = models.CharField(max_length=64)
     description = models.CharField(max_length=256)
     created_on = models.DateTimeField(auto_now_add=True)

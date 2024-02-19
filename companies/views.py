@@ -1,6 +1,6 @@
-from django.urls import path
-from .views import CompaniesList, CompaniesDetail
+from django.views.generic import ListView
 
-urlpatterns = [
-    path('', )
-]
+from .models import Companie
+
+class CompanieListView(ListView):
+    model = Companie
