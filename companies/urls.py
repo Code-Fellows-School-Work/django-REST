@@ -1,6 +1,8 @@
 from django.urls import path
-from .views import CompanieListView
+from rest_framework.urlpatterns import format_suffix_patterns
+from companies import views
 
 urlpatterns =[
-    path('', CompanieListView.as_view(), name='home'),
+    path('companies/', views.CompanieDetailView.as_view()),
+    path('companies/<int:pk>/', views.CompanieDetailView.as_view())
 ]
