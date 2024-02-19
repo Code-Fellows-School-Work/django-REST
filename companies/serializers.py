@@ -9,4 +9,5 @@ class CompanieSerializer(serializers.ModelSerializer):
             "owner",
             "name",
             "description",
+            "created_on"
         )
