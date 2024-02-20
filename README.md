@@ -11,8 +11,6 @@ V.1.0.0 (Pr: https://github.com/Code-Fellows-School-Work/django-REST/pull/1)
 
 ### Setup
 - Install Docker
-- In the CLI, run the command: docker run -p 8000:8000 django_companies_project
-- In the web browser, navigate to http://localhost:8000/api/v1/companies/
 
 i.e.
 
@@ -21,7 +19,10 @@ i.e.
 
 ### How to initialize/run your application (where applicable)
 
-- run python manage.py runserver
+- CD into Django-REST directory
+- Run the command: docker build -t django_companies_project .
+- Run the command: docker-compose up --build
+- In the web browser, navigate to http://localhost:8000/api/v1/companies/
 
 ### How to use your library (where applicable)
 ### Tests
